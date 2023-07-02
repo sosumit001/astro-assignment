@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Services">
+  <div class="finEdge-service">
+    <h1>Services</h1>
+    <div class="service-section">
+      <h3>1. Individual Money Transfers</h3>
+      <p>
+        FinEdge offers secure and convenient individual money transfer services,
+        allowing users to send and receive funds domestically and
+        internationally. With competitive exchange rates and low fees, FinEdge
+        ensures swift and reliable transactions.
+      </p>
+    </div>
+
+    <div class="service-section">
+      <h3>2. Business Payments</h3>
+      <p>
+        FinEdge provides efficient and streamlined business payment solutions,
+        enabling companies to manage their financial transactions seamlessly.
+        Whether it's payroll processing, vendor payments, or invoice
+        settlements, FinEdge offers a secure platform for businesses to handle
+        their payment needs.
+      </p>
+    </div>
+
+    <div class="service-section">
+      <h3>3. Real-Time Payment Tracking</h3>
+      <p>
+        Stay updated on your payments with FinEdge's real-time payment tracking
+        service. Whether you're sending or receiving funds, FinEdge allows you
+        to monitor the status of your transactions, providing transparency and
+        peace of mind.
+      </p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.5rem;
+  }
+
+  .finEdge-service {
+    color: white;
+    margin-top: -2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+  }
+
+  .service-section {
+    width: 80%;
+    text-align: center;
+  }
+
+  .service-section h3 {
+    text-align: left;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .service-section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    width: 80%;
+  }
+
+  /* Responsive Styles */
+
+  @media (max-width: 768px) {
+    .finEdge-service {
+      padding: 30px 20px;
+    }
+
+    .service-section {
+      width: 100%;
+    }
+  }
+</style>

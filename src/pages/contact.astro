@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact Us">
+  <div class="finEdge-contact">
+    <h1>Register</h1>
+    <form>
+      <label>
+        <input placeholder="Username" type="text" name="username" />
+      </label>
+      <label>
+        <input placeholder="Email" type="email" name="email" />
+      </label>
+      <label>
+        <input placeholder="Password" type="password" name="password" />
+      </label>
+      <button>Submit</button>
+    </form>
+  </div>
+</Layout>
+
+<style>
+  .finEdge-contact {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .finEdge-contact h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .finEdge-contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .finEdge-contact form label {
+    width: 70%;
+  }
+  .finEdge-contact form label input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    color: white;
+    background: rgb(34, 34, 34);
+    border: none;
+    border-radius: 4px;
+  }
+
+  .finEdge-contact form button {
+    background: rgb(34, 34, 34);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70%;
+  }
+
+  /* Responsive Styles */
+
+  @media (max-width: 768px) {
+    .finEdge-contact form {
+      max-width: 300px;
+    }
+  }
+</style>
